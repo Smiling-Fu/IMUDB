@@ -1,3 +1,6 @@
+# 导入 NVIDIA GPG 密钥
+RUN curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | apt-key add -
+
 FROM pytorchlightning/pytorch_lightning:base-cuda-py3.6-torch1.8
 
 RUN apt-get update ##[edited]
